@@ -43,7 +43,7 @@ const EditProfile = ({
       instagram: loading || !profile.social ? '' : profile.social.instagram,
       youtube: loading || !profile.social ? '' : profile.social.youtube,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
